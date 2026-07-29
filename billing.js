@@ -20,3 +20,6 @@ document.getElementById("billTotal").innerHTML=total;
 
 document.getElementById("bill").style.display="block";
 }
+function goToReport(){
+    window.location.href="reports.html"
+}
