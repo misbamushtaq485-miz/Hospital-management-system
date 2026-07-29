@@ -11,17 +11,6 @@ alert("Please fill all fields.");
 return;
 }
 
-// Save appointment details in localStorage
-const appointment = {
-    patient: patient,
-    age: age,
-    doctor: doctor,
-    date: date,
-    time: time
-};
-
-localStorage.setItem("appointment", JSON.stringify(appointment));
-
 let table=document.getElementById("appointmentTable");
 
 let row=table.insertRow();
@@ -35,10 +24,13 @@ row.insertCell(4).innerHTML=time;
 document.getElementById("patientName").value="";
 document.getElementById("age").value="";
 document.getElementById("doctor").value="";
-document.getElementById("data").value="";
+document.getElementById("date").value="";
 document.getElementById("time").value="";
 
-}
 function goToBilling(){
-window.location.href="billing.html"
+    window.location.href="billing.html"
+}
+alert("Appointment Booked Successfully!");
+
+window.location.href = "billing.html";
 }
