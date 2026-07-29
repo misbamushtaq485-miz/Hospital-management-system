@@ -40,5 +40,5 @@ document.getElementById("time").value="";
 
 }
 function goToBilling(){
-window.location.href="billing.html"
+window.location.href="billing.html";
 }
