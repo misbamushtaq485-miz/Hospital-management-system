@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Appointment Booking</title>
+<link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Book an Appointment</h1>
+
+<input type="text" id="patientName" placeholder="Patient Name">
+
+<input type="number" id="age" placeholder="Age">
+
+<select id="doctor">
+<option value="">Select Doctor</option>
+<option>Dr. Sharma</option>
+<option>Dr. Khan</option>
+<option>Dr. Gupta</option>
+<option>Dr. Singh</option>
+</select>
+
+<input type="date" id="date">
+
+<input type="time" id="time">
+
+<button onclick="bookAppointment()">Book Appointment</button>
+
+<h2>Appointments</h2>
+
+<table>
+<thead>
+<tr>
+<th>Patient</th>
+<th>Age</th>
+<th>Doctor</th>
+<th>Date</th>
+<th>Time</th>
+</tr>
+</thead>
+
+<tbody id="appointmentTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="appointment.js"></script>
+
+</body>
+</html>
