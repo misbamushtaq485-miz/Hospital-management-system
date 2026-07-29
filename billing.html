@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Billing System</title>
+<link rel="stylesheet" href="billing.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Hospital Billing System</h1>
+
+<input type="text" id="patientName" placeholder="Patient Name">
+
+<input type="number" id="consultation" placeholder="Consultation Fee (₹)">
+
+<input type="number" id="medicine" placeholder="Medicine Charges (₹)">
+
+<input type="number" id="test" placeholder="Test Charges (₹)">
+
+<button onclick="generateBill()">Generate Bill</button>
+
+<div id="bill" class="bill">
+<h2>Patient Bill</h2>
+
+<p><strong>Patient Name:</strong> <span id="billName"></span></p>
+
+<p><strong>Consultation Fee:</strong> ₹<span id="billConsultation"></span></p>
+
+<p><strong>Medicine Charges:</strong> ₹<span id="billMedicine"></span></p>
+
+<p><strong>Test Charges:</strong> ₹<span id="billTest"></span></p>
+
+<h3>Total Amount: ₹<span id="billTotal"></span></h3>
+
+</div>
+
+</div>
+
+<script src="billing.js"></script>
+
+</body>
+</html>
