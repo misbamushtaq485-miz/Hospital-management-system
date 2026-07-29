@@ -38,6 +38,7 @@ document.getElementById("doctor").value="";
 document.getElementById("data").value="";
 document.getElementById("time").value="";
 
-alert("Appointment Booked Successfully");
 }
-Window.location.href = "billing.html";
+function goToBilling(){
+window.location.href="billing.html"
+}
