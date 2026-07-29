@@ -27,3 +27,6 @@ document.getElementById("disease").value="";
 alert("Patient Registered Successfully");
 
 }
+function goToAppointment(){
+    window.location.href="appointment.html";
+}
