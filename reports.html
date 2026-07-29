@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital Reports</title>
+<link rel="stylesheet" href="reports.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Hospital Report System</h1>
+
+<input type="text" id="patientName" placeholder="Patient Name">
+
+<input type="number" id="age" placeholder="Age">
+
+<input type="text" id="doctor" placeholder="Doctor Name">
+
+<input type="text" id="diagnosis" placeholder="Diagnosis">
+
+<textarea id="treatment" placeholder="Treatment / Prescription"></textarea>
+
+<button onclick="generateReport()">Generate Report</button>
+
+<div id="report" class="report">
+
+<h2>Medical Report</h2>
+
+<p><strong>Patient Name:</strong> <span id="rName"></span></p>
+
+<p><strong>Age:</strong> <span id="rAge"></span></p>
+
+<p><strong>Doctor:</strong> <span id="rDoctor"></span></p>
+
+<p><strong>Diagnosis:</strong> <span id="rDiagnosis"></span></p>
+
+<p><strong>Treatment:</strong> <span id="rTreatment"></span></p>
+
+</div>
+
+</div>
+
+<script src="report.js"></script>
+
+</body>
+</html>
